@@ -18,8 +18,10 @@ body {
 		radial-gradient(circle at 50% 80%, rgba(124, 58, 237, 0.14), transparent 55%),
 		linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
 	color: var(--ink);
-	font-family: "Source Sans 3", sans-serif;
+	font-family: "Inter", sans-serif;
 	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body:before {
@@ -27,14 +29,14 @@ body:before {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Source Serif 4", serif;
+	font-family: "Merriweather", serif;
 	color: var(--ink);
-	letter-spacing: -0.01em;
+	letter-spacing: -0.006em;
 	font-weight: 700;
 }
 
 p, li, input, textarea {
-	font-family: "Source Sans 3", sans-serif;
+	font-family: "Inter", sans-serif;
 }
 
 a {
@@ -69,7 +71,7 @@ a {
 }
 
 #intro.hero-panel h1 {
-	font-family: "Source Serif 4", serif;
+	font-family: "Merriweather", serif;
 	font-size: clamp(2.1rem, 5vw, 3.8rem);
 	margin-bottom: 0.5rem;
 	letter-spacing: -0.01em;
@@ -95,7 +97,7 @@ a {
 	font-weight: 800;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	font-family: "Source Sans 3", sans-serif;
+	font-family: "Inter", sans-serif;
 	font-weight: 700;
 }
 
@@ -116,7 +118,7 @@ button {
 	border-color: rgba(131, 154, 255, 0.28) !important;
 	background: rgba(16, 23, 51, 0.72) !important;
 	color: var(--ink) !important;
-	font-family: "Source Sans 3", sans-serif !important;
+	font-family: "Inter", sans-serif !important;
 	letter-spacing: 0.02em !important;
 	font-weight: 700 !important;
 }
@@ -368,7 +370,7 @@ input[type="submit"].primary {
 
 .stats-grid strong {
 	display: block;
-	font-family: "Source Serif 4", serif;
+	font-family: "Merriweather", serif;
 	font-size: 1rem;
 	color: var(--ink);
 }
@@ -452,7 +454,7 @@ input[type="submit"].primary {
 	font-weight: 700;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	font-family: "Source Sans 3", sans-serif;
+	font-family: "Inter", sans-serif;
 }
 
 .post .actions.special,
@@ -617,7 +619,7 @@ input[type="submit"].primary {
 .section-heading h2,
 .about-copy h2,
 .contact-panel h2 {
-	font-family: "Source Serif 4", serif;
+	font-family: "Merriweather", serif;
 	letter-spacing: -0.01em;
 	font-weight: 700;
 }
