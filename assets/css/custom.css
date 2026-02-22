@@ -159,12 +159,14 @@ input[type="submit"].primary {
 #main > .posts {
 	display: grid !important;
 	grid-template-columns: 1fr !important;
+	justify-items: center !important;
 	padding: 0 !important;
 	text-align: left !important;
 }
 
 #main > .posts > article.project-card {
-	width: auto !important;
+	width: min(100%, 760px) !important;
+	max-width: 760px !important;
 	padding: 1.4rem !important;
 	margin: 0 !important;
 	border-left-width: 0 !important;
@@ -452,6 +454,7 @@ input[type="submit"].primary {
 .github-grid {
 	display: grid;
 	grid-template-columns: 1fr;
+	justify-items: center;
 	gap: 1rem;
 }
 
@@ -459,6 +462,8 @@ input[type="submit"].primary {
 	background: rgba(16, 22, 50, 0.78);
 	border: 1px solid var(--card-border);
 	border-radius: 14px;
+	width: min(100%, 760px);
+	max-width: 760px;
 	padding: 1rem;
 	box-shadow: 0 10px 24px rgba(2, 4, 12, 0.22);
 }
