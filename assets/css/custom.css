@@ -157,16 +157,21 @@ input[type="submit"].primary {
 }
 
 #main > .posts {
-	display: grid !important;
-	grid-template-columns: 1fr !important;
-	justify-items: center !important;
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: center !important;
+	flex-wrap: nowrap !important;
 	padding: 0 !important;
 	text-align: left !important;
+	gap: 1.5rem !important;
 }
 
 #main > .posts > * {
-	width: 100% !important;
+	width: min(100%, 760px) !important;
+	max-width: 760px !important;
 	padding: 0 !important;
+	margin: 0 auto !important;
+	flex: 0 0 auto !important;
 }
 
 #main > .posts > article.project-card {
@@ -177,6 +182,11 @@ input[type="submit"].primary {
 	border-left-width: 0 !important;
 	border-top-width: 0 !important;
 	text-align: left !important;
+}
+
+#main > .posts > article {
+	border-left-width: 0 !important;
+	border-top-width: 0 !important;
 }
 
 .post,
