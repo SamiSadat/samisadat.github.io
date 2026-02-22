@@ -190,17 +190,23 @@ input[type="submit"].primary {
 }
 
 .section-heading.narrow-heading {
-	max-width: 38rem;
-	width: min(100%, 38rem);
+	max-width: 56rem;
+	width: min(100%, 56rem);
 }
 
 #main > .section-heading.narrow-heading {
-	max-width: 38rem !important;
-	width: min(100%, 38rem) !important;
+	max-width: 56rem !important;
+	width: min(100%, 56rem) !important;
 	margin-left: auto !important;
 	margin-right: auto !important;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
+}
+
+@media screen and (min-width: 981px) {
+	.section-heading.narrow-heading p:last-child {
+		white-space: nowrap;
+	}
 }
 
 #main > .about-section,
