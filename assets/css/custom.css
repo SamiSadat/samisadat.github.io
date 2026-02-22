@@ -122,6 +122,8 @@ input[type="submit"].primary {
 
 #main {
 	background: transparent;
+	width: 100% !important;
+	max-width: none !important;
 }
 
 #main > * {
@@ -133,15 +135,15 @@ input[type="submit"].primary {
 .posts,
 .live-projects-section,
 .github-grid {
-	max-width: 980px;
-	width: min(100%, 980px);
+	max-width: none;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .section-heading {
-	max-width: 980px;
-	width: min(100%, 980px);
+	max-width: none;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -151,7 +153,8 @@ input[type="submit"].primary {
 #main > .section-heading,
 #main > .posts,
 #main > .live-projects-section {
-	width: min(100%, 980px) !important;
+	width: 100% !important;
+	max-width: none !important;
 	margin-left: auto !important;
 	margin-right: auto !important;
 }
@@ -167,16 +170,16 @@ input[type="submit"].primary {
 }
 
 #main > .posts > * {
-	width: min(100%, 760px) !important;
-	max-width: 760px !important;
+	width: 100% !important;
+	max-width: none !important;
 	padding: 0 !important;
 	margin: 0 auto !important;
 	flex: 0 0 auto !important;
 }
 
 #main > .posts > article.project-card {
-	width: min(100%, 760px) !important;
-	max-width: 760px !important;
+	width: 100% !important;
+	max-width: none !important;
 	padding: 1.4rem !important;
 	margin: 0 !important;
 	border-left-width: 0 !important;
@@ -477,8 +480,8 @@ input[type="submit"].primary {
 	background: rgba(16, 22, 50, 0.78);
 	border: 1px solid var(--card-border);
 	border-radius: 14px;
-	width: min(100%, 760px);
-	max-width: 760px;
+	width: 100%;
+	max-width: none;
 	padding: 1rem;
 	box-shadow: 0 10px 24px rgba(2, 4, 12, 0.22);
 }
