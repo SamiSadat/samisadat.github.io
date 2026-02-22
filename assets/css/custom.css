@@ -134,14 +134,42 @@ input[type="submit"].primary {
 .live-projects-section,
 .github-grid {
 	max-width: 980px;
+	width: min(100%, 980px);
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .section-heading {
 	max-width: 980px;
+	width: min(100%, 980px);
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#main > .about-section,
+#main > .skills-section,
+#main > .section-heading,
+#main > .posts,
+#main > .live-projects-section {
+	width: min(100%, 980px) !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+#main > .posts {
+	display: grid !important;
+	grid-template-columns: 1fr !important;
+	padding: 0 !important;
+	text-align: left !important;
+}
+
+#main > .posts > article.project-card {
+	width: auto !important;
+	padding: 1.4rem !important;
+	margin: 0 !important;
+	border-left-width: 0 !important;
+	border-top-width: 0 !important;
+	text-align: left !important;
 }
 
 .post,
