@@ -179,15 +179,17 @@ input[type="submit"].primary {
 }
 
 .section-heading.narrow-heading {
-	max-width: 52rem;
-	width: min(100%, 52rem);
+	max-width: 38rem;
+	width: min(100%, 38rem);
 }
 
 #main > .section-heading.narrow-heading {
-	max-width: 52rem !important;
-	width: min(100%, 52rem) !important;
+	max-width: 38rem !important;
+	width: min(100%, 38rem) !important;
 	margin-left: auto !important;
 	margin-right: auto !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
 #main > .about-section,
