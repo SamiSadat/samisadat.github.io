@@ -9,7 +9,11 @@
 		<title>Sami Sadat Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<link rel="icon" href="images/bg.jpg">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -19,11 +23,13 @@
 			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
-					<div id="intro">
+					<div id="intro" class="hero-panel">
+						<p class="eyebrow">AI Engineer Portfolio</p>
 						<h1>Sami Sadat</h1>
-						<p>AI/ML Developer focused on multimodal retrieval, document intelligence, and practical FastAPI tools.<br>Building recent projects in Python, transformers, OCR, and vector search.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						<p class="hero-copy">AI/ML Developer focused on multimodal retrieval, document intelligence, and practical FastAPI tools.<br>Building recent projects in Python, transformers, OCR, and vector search.</p>
+						<ul class="actions hero-actions">
+							<li><a href="#main" class="button primary scrolly">View Projects</a></li>
+							<li><a href="https://github.com/SamiSadat" class="button">GitHub</a></li>
 						</ul>
 					</div>
 
@@ -36,49 +42,80 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
+									<p class="eyebrow">Featured Project</p>
 							
 									<h2><a href="https://github.com/SamiSadat/multimodal-rag-system">Multimodal RAG System</a></h2>
 									<p>CLIP-based multimodal retrieval pipeline for images, PDFs, and transcripts with FAISS vector search, transformer reranking, CLI queries, and FastAPI endpoints.</p>
+									<ul class="project-tags">
+										<li>Python</li>
+										<li>CLIP</li>
+										<li>FAISS</li>
+										<li>FastAPI</li>
+										<li>Transformers</li>
+									</ul>
 								</header>
 								<a href="https://github.com/SamiSadat/multimodal-rag-system" class="image main"><img src="images/pic01.jpg" alt="Multimodal RAG System project cover" /></a>
 								<ul class="actions special">
-									<li><a href="https://github.com/SamiSadat/multimodal-rag-system" class="button large">GitHub Repo</a></li>
+									<li><a href="https://github.com/SamiSadat/multimodal-rag-system" class="button large primary">GitHub Repo</a></li>
 								</ul>
 							</article>
 
 						<!-- Posts -->
+							<header class="section-heading">
+								<p class="eyebrow">Recent Work</p>
+								<h2>Projects Built Recently</h2>
+								<p>Production-oriented AI tooling, retrieval systems, and document understanding pipelines.</p>
+							</header>
 							<section class="posts">
-								<article>
+								<article class="project-card">
 									<header>
 									
 										<h2><a href="https://github.com/SamiSadat/multimodal-personal-knowledge-base">Multimodal Personal Knowledge Base</a></h2>
 									</header>
 									<a href="https://github.com/SamiSadat/multimodal-personal-knowledge-base" class="image fit"><img src="images/on.jpg" alt="Multimodal personal knowledge base project" /></a>
 									<p>Embedding-based knowledge base for semantic search across text notes, code snippets, and diagram captions with unified indexing and FastAPI support.</p>
+									<ul class="project-tags compact">
+										<li>Python</li>
+										<li>Embeddings</li>
+										<li>FAISS</li>
+										<li>FastAPI</li>
+									</ul>
 									<ul class="actions special">
-										<li><a href="https://github.com/SamiSadat/multimodal-personal-knowledge-base" class="button">GitHub Repo</a></li>
+										<li><a href="https://github.com/SamiSadat/multimodal-personal-knowledge-base" class="button primary">GitHub Repo</a></li>
 									</ul>
 								</article>
-								<article>
+								<article class="project-card">
 									<header>
 										
 										<h2><a href="https://github.com/SamiSadat/document-ai-entity-extraction">Document AI Entity Extraction</a></h2>
 									</header>
 									<a href="https://github.com/SamiSadat/document-ai-entity-extraction" class="image fit"><img src="images/weather.jpg" alt="Document AI structured extraction project" /></a>
 									<p>OCR + layout-aware extraction pipeline for invoices/forms using Tesseract, spatial heuristics, optional LayoutLM QA, and FastAPI/CLI interfaces.</p>
+									<ul class="project-tags compact">
+										<li>Python</li>
+										<li>Tesseract OCR</li>
+										<li>LayoutLM</li>
+										<li>FastAPI</li>
+									</ul>
 									<ul class="actions special">
-										<li><a href="https://github.com/SamiSadat/document-ai-entity-extraction" class="button">GitHub Repo</a></li>
+										<li><a href="https://github.com/SamiSadat/document-ai-entity-extraction" class="button primary">GitHub Repo</a></li>
 									</ul>
 								</article>
-								<article>
+								<article class="project-card">
 									<header>
 										
 										<h2><a href="https://github.com/SamiSadat">More Projects on GitHub</a></h2>
 									</header>
 									<a href="https://github.com/SamiSadat" class="image fit"><img src="images/mars.jpg" alt="GitHub profile projects" /></a>
 									<p>See the latest repositories, experiments, and updates on my GitHub profile, including multimodal AI systems, RAG pipelines, and document intelligence work.</p>
+									<ul class="project-tags compact">
+										<li>GitHub</li>
+										<li>Experiments</li>
+										<li>AI/ML</li>
+										<li>Updates</li>
+									</ul>
 									<ul class="actions special">
-										<li><a href="https://github.com/SamiSadat" class="button">View GitHub</a></li>
+										<li><a href="https://github.com/SamiSadat" class="button primary">View GitHub</a></li>
 									</ul>
 								</article>
 								
@@ -91,26 +128,14 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+						<section class="contact-panel">
+							<p class="eyebrow">Contact</p>
+							<h2>Open to AI/ML Projects and Collaborations</h2>
+							<p>I build practical AI systems with Python, retrieval pipelines, OCR/document intelligence, and API-first tooling. Reach out through email or GitHub.</p>
+							<ul class="actions">
+								<li><a href="mailto:sami.sadat@g.bracu.ac.bd" class="button primary">Email Me</a></li>
+								<li><a href="https://github.com/SamiSadat" class="button">GitHub Profile</a></li>
+							</ul>
 						</section>
 						<section class="split contact">
 							<section class="alt">
@@ -120,21 +145,19 @@
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">01857562457</a></p>
+								<p><a href="tel:+8801857562457">01857562457</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">sami.sadat@g.bracu.ac.bd</a></p>
+								<p><a href="mailto:sami.sadat@g.bracu.ac.bd">sami.sadat@g.bracu.ac.bd</a></p>
 								
 								
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="https://github.com/SamiSadat" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="mailto:sami.sadat@g.bracu.ac.bd" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</section>
 						</section>
