@@ -150,6 +150,123 @@ input[type="submit"].primary {
 	margin-bottom: 0;
 }
 
+.about-section {
+	display: grid;
+	grid-template-columns: 1.25fr 1fr;
+	gap: 1.25rem;
+	margin-bottom: 2rem;
+}
+
+.about-copy,
+.about-side,
+.skills-section,
+.live-projects-section {
+	background: var(--card);
+	border: 1px solid var(--card-border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+}
+
+.about-copy {
+	padding: 1.5rem 1.5rem 1.25rem 1.5rem;
+}
+
+.about-copy h2 {
+	margin: 0.25rem 0 0.8rem 0;
+	font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
+.about-copy p {
+	color: var(--muted);
+}
+
+.subtle-note {
+	font-size: 0.9rem;
+	color: var(--muted);
+	background: rgba(20, 32, 51, 0.04);
+	border: 1px dashed rgba(20, 32, 51, 0.12);
+	border-radius: 12px;
+	padding: 0.7rem 0.9rem;
+}
+
+.about-side {
+	display: grid;
+	gap: 1rem;
+	padding: 1rem;
+}
+
+.info-card {
+	background: rgba(255, 255, 255, 0.75);
+	border: 1px solid var(--card-border);
+	border-radius: 14px;
+	padding: 1rem;
+}
+
+.info-card h3 {
+	margin: 0 0 0.75rem 0;
+	font-size: 1rem;
+}
+
+.skill-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.skill-list li {
+	padding: 0.45rem 0;
+	border-bottom: 1px solid rgba(20, 32, 51, 0.07);
+	color: var(--ink);
+	font-weight: 600;
+}
+
+.skill-list li:last-child {
+	border-bottom: none;
+}
+
+.stats-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.9rem;
+}
+
+.stats-grid > div {
+	background: rgba(20, 32, 51, 0.03);
+	border: 1px solid rgba(20, 32, 51, 0.06);
+	border-radius: 12px;
+	padding: 0.8rem;
+}
+
+.stats-grid strong {
+	display: block;
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 1rem;
+	color: var(--ink);
+}
+
+.stats-grid span {
+	display: block;
+	margin-top: 0.15rem;
+	font-size: 0.85rem;
+	color: var(--muted);
+}
+
+.skills-section,
+.live-projects-section {
+	padding: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.skills-groups {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.skills-groups .info-card {
+	height: 100%;
+}
+
 .posts {
 	display: grid !important;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -179,6 +296,12 @@ input[type="submit"].primary {
 .posts > article .image.fit img {
 	aspect-ratio: 16 / 9;
 	object-fit: cover;
+}
+
+.post.featured .image.main img {
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	background: #f3f6fb;
 }
 
 .posts > article p {
@@ -266,6 +389,95 @@ input[type="submit"].primary {
 	color: var(--ink);
 }
 
+.github-status {
+	margin: 0.25rem auto 1rem auto;
+	padding: 0.75rem 0.9rem;
+	max-width: 46rem;
+	text-align: center;
+	border-radius: 999px;
+	background: rgba(20, 32, 51, 0.05);
+	border: 1px solid rgba(20, 32, 51, 0.08);
+	color: var(--muted);
+	font-weight: 700;
+}
+
+.github-status.is-success {
+	color: var(--accent);
+	background: rgba(15, 118, 110, 0.08);
+	border-color: rgba(15, 118, 110, 0.18);
+}
+
+.github-status.is-error {
+	color: #b45309;
+	background: rgba(245, 158, 11, 0.1);
+	border-color: rgba(245, 158, 11, 0.2);
+}
+
+.github-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.github-repo-card {
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid var(--card-border);
+	border-radius: 14px;
+	padding: 1rem;
+	box-shadow: 0 10px 24px rgba(20, 32, 51, 0.07);
+}
+
+.repo-top {
+	display: flex;
+	gap: 0.8rem;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.repo-top h3 {
+	margin: 0;
+	font-size: 1rem;
+	line-height: 1.2;
+}
+
+.repo-updated {
+	font-size: 0.75rem;
+	color: var(--muted);
+	white-space: nowrap;
+}
+
+.repo-desc {
+	margin: 0.75rem 0;
+	color: var(--muted);
+	font-size: 0.92rem;
+}
+
+.repo-tags {
+	margin: 0 0 0.75rem 0;
+}
+
+.repo-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	font-size: 0.82rem;
+	font-weight: 700;
+	color: var(--muted);
+}
+
+.repo-actions {
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+	margin-top: 0.75rem;
+}
+
+.repo-actions a:not(.button) {
+	color: var(--accent);
+	font-weight: 700;
+	font-size: 0.9rem;
+}
+
 @media screen and (max-width: 980px) {
 	#intro.hero-panel {
 		margin: 1.2rem 1rem 0 1rem;
@@ -287,6 +499,15 @@ input[type="submit"].primary {
 
 	.posts > article.project-card:last-child {
 		grid-column: auto;
+	}
+
+	.about-section {
+		grid-template-columns: 1fr;
+	}
+
+	.skills-groups,
+	.github-grid {
+		grid-template-columns: 1fr;
 	}
 }
 

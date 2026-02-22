@@ -1,0 +1,12 @@
+Sami Sadat - Resume Placeholder
+
+Replace this file with your final resume (PDF or DOCX) and keep the same filename/path if you want the download button to continue working.
+
+Suggested replacement path:
+assets/resume/Sami-Sadat-Resume.pdf
+
+Current focus:
+- Multimodal RAG systems
+- Document AI / OCR entity extraction
+- FastAPI and CLI tooling
+- Semantic search and vector retrieval
