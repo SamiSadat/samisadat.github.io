@@ -164,6 +164,11 @@ input[type="submit"].primary {
 	text-align: left !important;
 }
 
+#main > .posts > * {
+	width: 100% !important;
+	padding: 0 !important;
+}
+
 #main > .posts > article.project-card {
 	width: min(100%, 760px) !important;
 	max-width: 760px !important;
