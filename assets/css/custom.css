@@ -204,10 +204,10 @@ input[type="submit"].primary {
 }
 
 #main > .posts {
-	display: flex !important;
-	flex-direction: column !important;
-	align-items: center !important;
-	flex-wrap: nowrap !important;
+	display: grid !important;
+	grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	align-items: start !important;
+	justify-items: stretch !important;
 	padding: 0 !important;
 	text-align: left !important;
 	gap: 1.5rem !important;
@@ -217,8 +217,8 @@ input[type="submit"].primary {
 	width: 100% !important;
 	max-width: none !important;
 	padding: 0 !important;
-	margin: 0 auto !important;
-	flex: 0 0 auto !important;
+	margin: 0 !important;
+	flex: none !important;
 }
 
 #main > .posts > article.project-card {
@@ -234,6 +234,12 @@ input[type="submit"].primary {
 #main > .posts > article {
 	border-left-width: 0 !important;
 	border-top-width: 0 !important;
+}
+
+@media screen and (max-width: 980px) {
+	#main > .posts {
+		grid-template-columns: 1fr !important;
+	}
 }
 
 .post,
