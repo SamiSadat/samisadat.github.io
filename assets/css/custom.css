@@ -178,6 +178,11 @@ input[type="submit"].primary {
 	margin-right: auto;
 }
 
+.section-heading.narrow-heading {
+	max-width: 52rem;
+	width: min(100%, 52rem);
+}
+
 #main > .about-section,
 #main > .skills-section,
 #main > .section-heading,

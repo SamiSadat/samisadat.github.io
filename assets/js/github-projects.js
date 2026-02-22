@@ -9,6 +9,8 @@
     "multimodal-rag-system",
     "multimodal-personal-knowledge-base",
     "document-ai-entity-extraction",
+    "Samv2-Propainter-pipeline",
+    "BRACU-Academic_Resources",
     "samisadat.github.io"
   ]);
 
