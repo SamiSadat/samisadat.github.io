@@ -43,6 +43,15 @@ a {
 	display: none;
 }
 
+#intro {
+	width: calc(100% - 2rem) !important;
+	max-width: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	padding-left: 2rem !important;
+	padding-right: 2rem !important;
+}
+
 #intro.hero-panel {
 	background:
 		linear-gradient(145deg, rgba(14, 21, 48, 0.95), rgba(10, 14, 34, 0.9));
@@ -127,10 +136,23 @@ input[type="submit"].primary {
 	background: transparent;
 	width: 100% !important;
 	max-width: none !important;
+	margin: 0 !important;
 }
 
 #main > * {
 	background: transparent;
+}
+
+#main {
+	width: calc(100% - 2rem) !important;
+	max-width: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+#main > * {
+	padding-left: 2rem !important;
+	padding-right: 2rem !important;
 }
 
 .about-section,
@@ -142,6 +164,11 @@ input[type="submit"].primary {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.about-section {
+	grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+	gap: 1.5rem;
 }
 
 .section-heading {
@@ -202,6 +229,10 @@ input[type="submit"].primary {
 	border: 1px solid var(--card-border) !important;
 	border-radius: var(--radius);
 	box-shadow: var(--shadow);
+	width: calc(100% - 2rem) !important;
+	max-width: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 .section-heading {
