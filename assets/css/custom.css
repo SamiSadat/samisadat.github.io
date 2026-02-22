@@ -206,6 +206,7 @@ input[type="submit"].primary {
 @media screen and (min-width: 981px) {
 	.section-heading.narrow-heading p:last-child {
 		white-space: nowrap;
+		max-width: none;
 	}
 }
 
@@ -285,6 +286,10 @@ input[type="submit"].primary {
 .section-heading p:last-child {
 	color: var(--muted);
 	margin-bottom: 0;
+	text-align: center !important;
+	max-width: 70ch;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .about-section {
