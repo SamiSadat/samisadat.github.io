@@ -27,9 +27,9 @@ body:before {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Sora", sans-serif;
+	font-family: "DM Serif Display", serif;
 	color: var(--ink);
-	letter-spacing: -0.015em;
+	letter-spacing: -0.01em;
 }
 
 p, li, input, textarea {
@@ -68,8 +68,11 @@ a {
 }
 
 #intro.hero-panel h1 {
+	font-family: "Orbitron", sans-serif;
 	font-size: clamp(2.1rem, 5vw, 4rem);
 	margin-bottom: 0.5rem;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
 }
 
 #intro .hero-copy {
@@ -90,7 +93,8 @@ a {
 	font-weight: 800;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	font-family: "JetBrains Mono", monospace;
+	font-family: "Orbitron", sans-serif;
+	font-weight: 700;
 }
 
 #intro .actions.hero-actions {
@@ -113,6 +117,12 @@ button {
 	font-family: "JetBrains Mono", monospace !important;
 	letter-spacing: 0.02em !important;
 	font-weight: 700 !important;
+}
+
+#intro .hero-actions .button {
+	font-family: "Orbitron", sans-serif !important;
+	letter-spacing: 0.04em !important;
+	font-size: 0.8rem !important;
 }
 
 .button.primary,
@@ -362,7 +372,7 @@ input[type="submit"].primary {
 
 .stats-grid strong {
 	display: block;
-	font-family: "Sora", sans-serif;
+	font-family: "DM Serif Display", serif;
 	font-size: 1rem;
 	color: var(--ink);
 }
@@ -606,6 +616,13 @@ input[type="submit"].primary {
 .github-repo-card h3,
 .about-copy h2 {
 	line-height: 1.25;
+}
+
+.section-heading h2,
+.about-copy h2,
+.contact-panel h2 {
+	font-family: "DM Serif Display", serif;
+	letter-spacing: 0;
 }
 
 .posts > article.project-card,
