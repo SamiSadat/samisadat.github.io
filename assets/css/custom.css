@@ -128,6 +128,22 @@ input[type="submit"].primary {
 	background: transparent;
 }
 
+.about-section,
+.skills-section,
+.posts,
+.live-projects-section,
+.github-grid {
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section-heading {
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .post,
 .posts > article,
 #footer {
